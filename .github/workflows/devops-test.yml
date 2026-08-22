@@ -1,0 +1,10 @@
+name: DevOps Test Workflow
+on:
+  push:
+    branches: [ "Victor" ]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run test echo
+        run: echo "Hello Victor, your YAML file works!"
